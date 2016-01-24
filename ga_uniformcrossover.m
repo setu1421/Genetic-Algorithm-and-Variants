@@ -52,7 +52,7 @@ for run = 1:runEnd
         end
         for i=1:2:lengthCross
             % mask1=round(rand(1,IndLength));
-            mask1=randperm(IndLength)/(IndLength/2);
+            mask1=randperm(IndLength)>(IndLength/2);
             mask2=not(mask1);
             child1=round(rand(1,IndLength));
             child2=round(rand(1,IndLength));
